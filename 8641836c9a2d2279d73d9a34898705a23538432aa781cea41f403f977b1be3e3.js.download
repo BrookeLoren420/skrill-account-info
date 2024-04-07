@@ -1,0 +1,65 @@
+window.optimizely.push({type:"load",data:{changes:[{"value": function($){var utils = optimizely.get('utils');
+utils.waitForElement('#tt-dashboardRight__mainLink')
+  .then(function(elem) {
+
+  var lang = window.optimizely.get("visitor")["custom"];
+  lang = (typeof lang !== "undefined") ? (lang["19576051031"] || "EN") : "EN";
+  lang = (lang == "EN") ? "EN" : lang["value"];
+  var link = document.getElementById("tt-dashboardRight__mainLink");
+  var newCont = document.createElement("DIV");
+  newCont.id = "appBtns";
+  var newButtons = '<a class="dashboard-mbox-button android" href="https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-en" onclick="javascript:betaDashboardRight_buttonClick();" target="_blank"></a><a class="dashboard-mbox-button ios" href="https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-en&mt=8" onclick="javascript:betaDashboardRight_buttonClick();" target="_blank"></a>';
+  newCont.innerHTML = newButtons;
+  link.parentElement.insertBefore(newCont,link);
+  link.style = "display:none";
+
+  switch(lang){
+    case "DE":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-de";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-de&mt=8";
+      break;
+    case "ES":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-es";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-es&mt=8";
+      break;
+    case "FR":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-fr";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-fr&mt=8";
+      break;
+    case "IT":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-it";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-it&mt=8";
+      break;
+    case "PL":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-pl";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-pl&mt=8";
+      break;
+    case "RO":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-ro";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-ro&mt=8";
+      break;
+    case "RU":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-ru";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-ru&mt=8";
+      break;
+    case "TR":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-tr";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-tr&mt=8";
+      break;
+    case "CN":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-cn";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-cn&mt=8";
+      break;
+    case "CZ":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-cz";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-cz&mt=8";
+      break;
+    case "GR":
+      document.querySelector("#appBtns .android").href = "https://play.google.com/store/apps/details?id=com.moneybookers.skrillpayments&referrer=utm_source%3Dmbox-dash-web%26utm_campaign%3Dskrill-icon-gr";
+      document.querySelector("#appBtns .ios").href = "https://itunes.apple.com/app/apple-store/id718248239?pt=5021800&ct=skrill-icon-web-gr&mt=8";
+      break;
+    default:
+      break;
+  }
+});
+}, "dependencies": [], "type": "custom_code", "id": "F6DB4BA8-8869-447E-A0D4-D0E48C8B932D"}]}});
